@@ -1,5 +1,6 @@
-Flask==2.2.5
-Flask-SQLAlchemy==3.0.2
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
 Flask-CORS==4.0.0
-SQLAlchemy==1.4.53
-Werkzeug==2.2.3 
+SQLAlchemy==2.0.21
+Werkzeug==2.3.7
+gunicorn==21.2.0 

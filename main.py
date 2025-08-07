@@ -24,8 +24,13 @@ app.register_blueprint(problems_bp, url_prefix='/api')
 app.register_blueprint(projects_bp, url_prefix='/api')
 app.register_blueprint(investments_bp, url_prefix='/api')
 
-# Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/app.db'
+# Database configuration for Vercel
+# Use environment variable for database URL or default to SQLite
+database_url = os.environ.get('DATABASE_URL', 'sqlite:///database/app.db')
+if database_url.startswith('postgres://'):
+    database_url = database_url.replace('postgres://', 'postgresql://', 1)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = database_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
@@ -60,5 +65,7 @@ def init_database():
     except Exception as e:
         return {'status': 'error', 'message': str(e)}, 500
 
+# Only run the app if this file is executed directly
+# Vercel will use the app object from this module
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
