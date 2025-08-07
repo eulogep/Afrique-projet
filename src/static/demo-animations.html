@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration des Animations - Solutions Afrique</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-globe-africa text-white text-lg"></i>
+                    </div>
+                    <h1 class="text-xl font-bold gradient-text glitch-text" data-text="Solutions Afrique">Solutions Afrique</h1>
+                </div>
+                <a href="index.html" class="ripple-button">
+                    <i class="fas fa-arrow-left mr-2"></i>Retour à l'App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- En-tête -->
+            <div class="text-center mb-12 slide-up">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Démonstration des Animations</h1>
+                <p class="text-xl text-gray-600">Découvrez tous les effets visuels inspirés de uiverse.io</p>
+            </div>
+
+            <!-- Section 1: Animations de chargement -->
+            <section class="mb-16 slide-left">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🔄 Animations de Chargement</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass-card text-center">
+                        <h3 class="text-xl font-semibold mb-4">Spinner Classique</h3>
+                        <div class="loading-spinner"></div>
+                        <p class="text-gray-600 mt-4">Animation de rotation fluide</p>
+                    </div>
+                    <div class="glass-card text-center">
+                        <h3 class="text-xl font-semibold mb-4">Spinner Pulsant</h3>
+                        <div class="pulse-spinner"></div>
+                        <p class="text-gray-600 mt-4">Effet de pulsation et rotation</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Skeleton Loading</h3>
+                        <div class="skeleton-card"></div>
+                        <p class="text-gray-600 mt-4 text-center">Animation de chargement pour les cartes</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Boutons animés -->
+            <section class="mb-16 slide-right">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🎯 Boutons Animés</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <button class="ripple-button mb-4">
+                            <i class="fas fa-rocket mr-2"></i>Ripple Effect
+                        </button>
+                        <p class="text-sm text-gray-600">Effet de vague au clic</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="neon-button mb-4">
+                            <i class="fas fa-star mr-2"></i>Neon Effect
+                        </button>
+                        <p class="text-sm text-gray-600">Effet néon au survol</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="morph-button mb-4">
+                            <i class="fas fa-magic mr-2"></i>Morphing
+                        </button>
+                        <p class="text-sm text-gray-600">Transformation de couleur</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="focus-ring ripple-button mb-4">
+                            <i class="fas fa-eye mr-2"></i>Focus Ring
+                        </button>
+                        <p class="text-sm text-gray-600">Anneau de focus animé</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Cartes avec animations -->
+            <section class="mb-16 zoom-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🃏 Cartes Animées</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="floating-card">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-lightbulb text-3xl text-yellow-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Carte Flottante</h3>
+                                <p class="text-gray-600">Effet de lévitation au survol</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Cette carte utilise l'effet de flottement avec une barre de couleur animée en haut.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-cube text-3xl text-blue-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Carte Glassmorphism</h3>
+                                <p class="text-gray-600">Effet de verre dépoli</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Cette carte utilise l'effet glassmorphism avec un fond semi-transparent.</p>
+                    </div>
+                    <div class="floating-card">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-sparkles text-3xl text-purple-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Carte Interactive</h3>
+                                <p class="text-gray-600">Animations multiples</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Cette carte combine plusieurs effets d'animation pour une expérience riche.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Indicateurs de progression -->
+            <section class="mb-16 slide-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">📊 Indicateurs de Progression</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card">
+                        <h3 class="text-xl font-semibold mb-6 text-center">Barres de Progression</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-sm font-medium">Projets Actifs</span>
+                                    <span class="text-sm text-gray-600">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-percentage="75"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-sm font-medium">Financement</span>
+                                    <span class="text-sm text-gray-600">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-percentage="60"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-sm font-medium">Impact Social</span>
+                                    <span class="text-sm text-gray-600">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-percentage="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <h3 class="text-xl font-semibold mb-6 text-center">Cercles de Progression</h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="circle-progress">
+                                    <svg>
+                                        <circle class="bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="45" data-percentage="75"></circle>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium mt-2">Projets</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="circle-progress">
+                                    <svg>
+                                        <circle class="bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="45" data-percentage="60"></circle>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium mt-2">Financement</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="circle-progress">
+                                    <svg>
+                                        <circle class="bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="45" data-percentage="90"></circle>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium mt-2">Impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Effets spéciaux -->
+            <section class="mb-16 slide-left">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">✨ Effets Spéciaux</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card text-center">
+                        <h3 class="text-xl font-semibold mb-4">Texte Glitch</h3>
+                        <div class="glitch-text text-2xl mb-4" data-text="Solutions Afrique">Solutions Afrique</div>
+                        <p class="text-gray-600">Survolez le texte pour voir l'effet glitch</p>
+                    </div>
+                    <div class="glass-card text-center">
+                        <h3 class="text-xl font-semibold mb-4">Compteur Animé</h3>
+                        <div class="text-4xl font-bold text-blue-600 mb-4" id="demo-counter">0</div>
+                        <button class="ripple-button" onclick="startCounter()">
+                            <i class="fas fa-play mr-2"></i>Démarrer
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Animations d'entrée -->
+            <section class="mb-16 slide-right">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Animations d'Entrée</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="floating-card slide-up" style="animation-delay: 0.1s;">
+                        <i class="fas fa-arrow-up text-2xl text-blue-500 mb-2"></i>
+                        <h3 class="font-semibold">Slide Up</h3>
+                    </div>
+                    <div class="floating-card slide-left" style="animation-delay: 0.2s;">
+                        <i class="fas fa-arrow-left text-2xl text-green-500 mb-2"></i>
+                        <h3 class="font-semibold">Slide Left</h3>
+                    </div>
+                    <div class="floating-card slide-right" style="animation-delay: 0.3s;">
+                        <i class="fas fa-arrow-right text-2xl text-purple-500 mb-2"></i>
+                        <h3 class="font-semibold">Slide Right</h3>
+                    </div>
+                    <div class="floating-card zoom-in" style="animation-delay: 0.4s;">
+                        <i class="fas fa-search-plus text-2xl text-orange-500 mb-2"></i>
+                        <h3 class="font-semibold">Zoom In</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Solutions Afrique - Démonstration des Animations</p>
+            <p class="text-gray-400 mt-2">Inspiré par uiverse.io</p>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+    <script>
+        // Fonction pour démarrer le compteur
+        function startCounter() {
+            const counter = document.getElementById('demo-counter');
+            if (window.animationManager) {
+                window.animationManager.animateCounter(counter, 1234, 2000);
+            }
+        }
+
+        // Initialiser les animations au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            // Attendre un peu pour voir les animations d'entrée
+            setTimeout(() => {
+                const elements = document.querySelectorAll('.slide-up, .slide-left, .slide-right, .zoom-in');
+                elements.forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'none';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
