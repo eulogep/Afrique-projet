@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "main.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb"
-      }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
@@ -19,13 +16,7 @@
       "dest": "main.py"
     }
   ],
-  "functions": {
-    "main.py": {
-      "runtime": "python3.9"
-    }
-  },
   "env": {
     "FLASK_ENV": "production"
-  },
-  "buildCommand": "chmod +x vercel-build.sh && ./vercel-build.sh"
+  }
 }
